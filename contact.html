@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>contact</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+    <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(11.1515182,75.8916038);
+
+function initialize()
+{
+var mapProp = {
+  center: myCenter,
+  zoom:5,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+  title:'Click to zoom'
+  });
+
+marker.setMap(map);
+
+// Zoom to 9 when clicking on marker
+google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(9);
+  map.setCenter(marker.getPosition());
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+  </head>
+<body>
+	<header>
+    	<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" 								aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+      			</button>
+               <div  class="logo">
+      			<a href="index.html" class="brand"> <img src="images/logosad.gif"> </a>
+      		</div>
+			</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+   			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      			<ul class="nav navbar-nav navbar-right">
+       				<li ><a href="index.html">HOME</a></li>
+                     <li><a href="about_us.html">ABOUT US</a></li>
+          			<li><a href="service.html">SERVICE</a></li>
+           			<li><a href="project.html">PROJECT</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+     			    <li><a href="news.html">NEWS&EVENTS</a></li>
+          			<li><a href="career.html">CAREERS</a></li>
+           			<li class="active"><a href="#contact">CONTACT US</a></li>
+                    
+            		
+      			</ul>
+   		   	</div><!-- /.navbar-collapse -->
+          
+			</div><!-- /.container-fluid -->
+		</nav>
+    </header>
+   
+   <div class="contactbanner"></div>
+   
+   <div class="contacts">
+   <div class="row">
+   <div class="col-md-6">
+    	<div class="c1">
+        	<div class="r11"><i class="fa fa-phone fa-3x" style="color:#FFF;margin-top: 25px; margin-left:30px"></i> </div>
+            <h3 class="h37">Contact Us</h3>
+            <center>
+            <form action="#">
+            <input type="text" value="" placeholder="Name" class="usrname" />
+            <input type="text" value="" placeholder="Email Address" class="pw" />
+             <input type="text" value="" placeholder="Contact Number" class="pw" />
+             <input type="text" value="" placeholder="Comments" class="message" />
+            <input type="button" value="SUBMIT" class="lg" />
+            </form>
+            </center>
+         	
+        </div><!--l1-->
+      
+    </div>
+    <div class="col-md-6">
+    
+    
+
+    	<div class="d1">
+          <div class="r11"><i class="fa fa-map-marker fa-3x" style="color:#FFF;margin-top: 25px; margin-left:35px"></i></div>	
+            <h3 class="h37">Address & Directions</h3>
+            <center>
+            <div class="addr">
+            	<h4 class="h47">Sadhbhavana Campus Velliparamba(P.O). </h4>
+                <h5 class="h58">Kozhikode-673008 Kerala - India</h5>
+                <h5 class="h58"> Phone: +91 495 2351661/62</h5>
+                <h5 class="h58"> Email - info@sadhbhavana.com</h5>
+              <a href="https://www.facebook.com/">  <i class="fa fa-facebook-square" style=" color: #337ab7;    font-size: 30px;" aria-hidden="true"></i></a>
+               <a href="https://www.twitter.com/"> <i class="fa fa-twitter-square" style=" color: #3498DB;    font-size: 30px;" aria-hidden="true"></i></a>
+               <a href="https://plus.google.com/getstarted/getstarted?fww=1"> <i class="fa fa-google-plus-square" style=" color: #E74C3C;    font-size: 30px;" aria-hidden="true"></i></a>
+            </div>
+            </center>
+         	
+        </div><!--l1--></div>
+        </div>
+      
+  </div>
+ <div id="googleMap" style="width:100%;height:380px; margin-bottom:-23px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.487194099101!2d75.89160383592142!3d11.151518224915332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64a905940006f%3A0x2bb39f013a853bc5!2sLinspire+Solutions!5e0!3m2!1sen!2sin!4v1458552744440" width="800" height="600" frameborder="0"  style="border:0 " allowfullscreen></iframe></div>
+<div class="footer">
+	<div class="container">
+    	<div class="row">
+        <div class="col-md-5">Copyright 2015 | Sadhbhavana Holidings All Rights Reserved</div>
+        <div class="col-md-3">Sadhbhavana Holdings</div>
+        <div class="col-md-4">Designed & Developed by Linspire Solutions</div>
+        </div>
+    </div>
+</div>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    
+
+    <script src="js/bootstrap.min.js"></script>
+
+  
+  </body>
+</html>
